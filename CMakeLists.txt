@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 4.1.0)
 project(talker VERSION 0.1.0 LANGUAGES CXX)
 
 option(BUILD_EXAMPLES "Build examples" OFF)
-option(BUILD_SERVICES "Build services" OFF)
-option(BUILD_TESTING "Build test" OFF)
+option(BUILD_TEST "Build test" OFF)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include(CompilerOptions)

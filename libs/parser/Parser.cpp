@@ -1,8 +1,8 @@
 #include "Parser.hpp"
 
+#include <ranges>
 #include <string>
 #include <string_view>
-#include <ranges>
 
 namespace {
 
@@ -10,7 +10,7 @@ constexpr std::string_view kSpaces = " \t\n\r\v\f\u00A0";
 
 }  // namespace
 
-namespace args {
+namespace parser {
 
 std::string_view TrimSpacesLeft(std::string_view str) noexcept {
     const auto pos = str.find_first_not_of(kSpaces);
@@ -41,4 +41,4 @@ std::string ToLower(std::string_view str) {
            std::ranges::to<std::string>();
 }
 
-}  // namespace args
+}  // namespace parser

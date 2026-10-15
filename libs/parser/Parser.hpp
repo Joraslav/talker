@@ -1,9 +1,9 @@
 #pragma once
 
-#include <string_view>
 #include <string>
+#include <string_view>
 
-namespace args {
+namespace parser {
 
 /**
  * @brief Removes leading whitespace characters
@@ -31,4 +31,4 @@ namespace args {
  */
 [[nodiscard]] std::string ToLower(std::string_view str);
 
-}  // namespace args
+}  // namespace parser

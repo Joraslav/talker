@@ -1,1 +1,1 @@
-ADD_GTEST_TARGET(Test_Dto LINK_LIBS recipes::contracts)
+ADD_GTEST_TARGET(TestParser LINK_LIBS talker::parser)
