@@ -1,0 +1,4 @@
+add_my_library(parser
+  SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/Parser.cpp
+  INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
+)
